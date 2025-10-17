@@ -1,0 +1,128 @@
+:root{
+    --primary-color: #F5CF06;
+    --secundary-color: #8E4106;
+}
+body{
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    font-family: Righteous, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+header span{
+    font-size: 32px;
+    color: var(--secundary-color);
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.sombra{
+    position: absolute;
+    font-size: 28vw;
+    color: #ffffff55;
+    z-index: -9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+}
+h1{
+    flex-grow: 1;
+    font-size: 22vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner{
+    height: 154px;
+    
+    padding-bottom: 75px;
+    color: var(--secundary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 1;
+    
+}
+.conteiner h2{
+    font-size: 64px;
+}
+.conteiner p{
+    font-size: 20px;
+    width: 500px;
+}
+.conteiner a{
+    width: 411px;
+    height: 100px;
+    font-size: 48px;
+    background-color: var(--secundary-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pikachu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+
+}
+footer{
+    color: var(--secundary-color);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+@media (max-width: 1024px){
+    body{
+        padding: 30px;
+    }
+    h1{
+        transform: translate(0%, -30%);
+    }
+    .sombra{
+        transform: translate(-50%, -180%);
+    }
+    .pikachu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -53%);
+    }
+    footer{
+        display: none;
+    }
+    main{
+        justify-content: baseline;
+        gap: 10px;
+    }
+    .descricao p{
+        text-align: center;
+    }
+    .conteiner{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0;
+    }
+}
+
+@media (max-wisth: 480px){
+    body{
+        background-color: gray;
+    }
+}
