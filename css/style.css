@@ -121,8 +121,27 @@ footer{
     }
 }
 
-@media (max-wisth: 480px){
-    body{
-        background-color: gray;
+@media (max-width: 480px){
+    footer{
+        display: none;
+    }
+    .descricao p{
+        display: none;
+    }
+    .sombra{
+        transform: translate(-50%, -220%);
+    }
+    .descricao h2{
+        justify-content: center;
+        font-size: 38px;
+    }
+    .conteiner a{
+        height: 100%;
+    }
+    h1{
+        transform: translate(0, -22%);
+    }
+    .pikachu{
+        height: 50vh;
     }
 }
